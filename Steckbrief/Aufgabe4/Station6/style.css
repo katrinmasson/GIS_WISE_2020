@@ -1,0 +1,37 @@
+body {
+    background-image: url(Bilder/bg.png);
+    display: block;
+    font-family: serif;
+    font-style: oblique;
+    color: white;
+    max-width: 800px;  
+}
+
+.up {
+    column-count: 2;
+    column-width: 50px;
+}
+
+.down {
+    column-count: 3;
+    column-width: 1px;
+    column-gap:30px;
+    
+}
+
+nav {
+    position: absolute;
+    top:150px;
+    left:400px;
+    max-width: 520px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.wrapper {
+    position:  relative;
+    top: 100px;
+    left: 350px;
+}
