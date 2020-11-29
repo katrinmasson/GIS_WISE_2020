@@ -35,7 +35,7 @@ var EuropaVeränderung = Europa2018 - Europa2008;
 var NordAmerikaVeränderung = NordAmerika2018 - NordAmerika2008;
 var SüdAmerikaVeränderung = SüdAmerika2018 - SüdAmerika2008;
 /* Konsole */
-console.log("Die Emission von Afrika ist:" + Afrika2018 + "kg CO2");
+console.log("Die Emission von Afrika ist: " + Afrika2018 + " kg CO2");
 console.log("Relativ zur Gesamtemission der Welt verursacht Afrika damit" + AfrikaProzent + "%");
 console.log("Für Afrika hat sich 2018 im Vergleich zu 2008 die Emission um" + AfrikaVeränderungProzent + "% verändert");
 console.log("2018 im Vergleich zu 2008 sind das" + AfrikaVeränderung + "kg CO2");
