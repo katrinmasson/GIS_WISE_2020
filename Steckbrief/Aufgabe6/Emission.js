@@ -36,58 +36,58 @@ var Werte;
     var EuropaVeränderung = Europa2018 - Europa2008;
     var NordAmerikaVeränderung = NordAmerika2018 - NordAmerika2008;
     var SüdAmerikaVeränderung = SüdAmerika2018 - SüdAmerika2008;
+    /* FunktionAlle */
+    function myFunction(absolut, relativ, Prozent, Zahl, Kontinent) {
+        document.querySelector(".absolut").innerHTML = absolut.toFixed(2) + "kg CO2";
+        document.querySelector(".relativ").innerHTML = relativ.toFixed(2) + "%";
+        document.querySelector(".Prozent").innerHTML = Prozent.toFixed(2) + "%";
+        document.querySelector(".Zahl").innerHTML = Zahl.toFixed(2);
+        document.querySelector(".chart").setAttribute('style', 'height:' + (absolut / GesamtEmissionen * 100).toFixed(2) + '%');
+        document.querySelector(".Kontinent").innerHTML = Kontinent;
+    }
+    /* Buttonveränderungen */
+    document.querySelector(".europe").addEventListener("click", function () {
+        myFunction(Europa2018, EuropaProzent, EuropaVeränderungProzent, EuropaVeränderung, "Europe");
+    });
+    document.querySelector(".northamerica").addEventListener("click", function () {
+        myFunction(NordAmerika2018, NordAmerikaProzent, NordAmerikaVeränderungProzent, NordAmerikaVeränderung, "Northamerica");
+    });
+    document.querySelector(".southamerica").addEventListener("click", function () {
+        myFunction(SüdAmerika2018, SüdAmerikaProzent, SüdAmerikaVeränderungProzent, SüdAmerikaVeränderung, "Southamerica");
+    });
+    document.querySelector(".asia").addEventListener("click", function () {
+        myFunction(Asien2018, AsienProzent, AsienVeränderungProzent, AsienVeränderung, "Asia");
+    });
+    document.querySelector(".africa").addEventListener("click", function () {
+        myFunction(Afrika2018, AfrikaProzent, AfrikaVeränderungProzent, AfrikaVeränderung, "Africa");
+    });
+    document.querySelector(".australia").addEventListener("click", function () {
+        myFunction(Australien2018, AustralienProzent, AustralienVeränderungProzent, AustralienVeränderung, "Australia");
+    });
 })(Werte || (Werte = {}));
-/* FunktionAlle */
-function myFunction(absolut, relativ, Prozent, Zahl, chart, Kontinent) {
-    document.querySelector(".absolut").innerHTML = absolut.toFixed(2) + "kg CO2";
-    document.querySelector(".relativ").innerHTML = relativ.toFixed(2) + "%";
-    document.querySelector(".Prozent").innerHTML = Prozent.toFixed(2) + "%";
-    document.querySelector(".Zahl").innerHTML = Zahl.toFixed(2);
-    document.querySelector(".chart").setAttribute('style', 'height:' + (absolut / GesamtEmissionen * 100).toFixed(2) + '%');
-    document.querySelector(".Kontinent").innerHTML = Kontinent;
-}
-/* Buttonveränderungen */
-document.querySelector(".europe").addEventListener("click", function () {
-    myFunction(Europa2018, EuropaProzent, EuropaVeränderungProzent, EuropaVeränderung, "Europe");
-});
-document.querySelector(".northamerica").addEventListener("click", function () {
-    myFunction(NordAmerika2018, NordAmerikaProzent, NordAmerikaVeränderungProzent, NordAmerikaVeränderung, "Northamerica");
-});
-document.querySelector(".southamerica").addEventListener("click", function () {
-    myFunction(SüdAmerika2018, SüdAmerikaProzent, SüdAmerikaVeränderungProzent, SüdAmerikaVeränderung, "Southamerica");
-});
-document.querySelector(".asia").addEventListener("click", function () {
-    myFunction(Asien2018, AsienProzent, AsienVeränderungProzent, AsienVeränderung, "Asia");
-});
-document.querySelector(".africa").addEventListener("click", function () {
-    myFunction(Afrika2018, AfrikaProzent, AfrikaVeränderungProzent, AfrikaVeränderung, "Africa");
-});
-document.querySelector(".australia").addEventListener("click", function () {
-    myFunction(Australien2018, AustralienProzent, AustralienVeränderungProzent, AustralienVeränderung, "Australia");
-});
 /* Konsole */
-console.log("Die Emission von Afrika ist: " + Afrika2018 + " kg CO2");
-console.log("Relativ zur Gesamtemission der Welt verursacht Afrika damit" + AfrikaProzent + "%");
-console.log("Für Afrika hat sich 2018 im Vergleich zu 2008 die Emission um" + AfrikaVeränderungProzent + "% verändert");
-console.log("2018 im Vergleich zu 2008 sind das" + AfrikaVeränderung + "kg CO2");
-console.log("Die Emission von Asien ist:" + Asien2018 + "kg CO2");
-console.log("Relativ zur Gesamtemission der Welt verursacht Asien damit" + AsienProzent + "%");
-console.log("Für Asien hat sich 2018 im Vergleich zu 2008 die Emission um" + AsienVeränderungProzent + "% verändert");
-console.log("2018 im Vergleich zu 2008 sind das" + AsienVeränderung + "kg CO2");
-console.log("Die Emission von Australien ist:" + Australien2018 + "kg CO2");
-console.log("Relativ zur Gesamtemission der Welt verursacht Australien damit" + AustralienProzent + "%");
-console.log("Für Australien hat sich 2018 im Vergleich zu 2008 die Emission um" + AustralienVeränderungProzent + "% verändert");
-console.log("2018 im Vergleich zu 2008 sind das" + AustralienVeränderung + "kg CO2");
-console.log("Die Emission von Europa ist:" + Europa2018 + "kg CO2");
-console.log("Relativ zur Gesamtemission der Welt verursacht Europa damit" + EuropaProzent + "%");
-console.log("Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um" + EuropaVeränderungProzent + "% verändert");
-console.log("2018 im Vergleich zu 2008 sind das" + EuropaVeränderung + "kg CO2");
-console.log("Die Emission von Nordamerika ist:" + NordAmerika2018 + "kg CO2");
-console.log("Relativ zur Gesamtemission der Welt verursacht Nordamerika damit" + NordAmerikaProzent + "%");
-console.log("Für Nordamerika hat sich 2018 im Vergleich zu 2008 die Emission um" + NordAmerikaVeränderungProzent + "% verändert");
-console.log("2018 im Vergleich zu 2008 sind das" + NordAmerikaVeränderung + "kg CO2");
-console.log("Die Emission von Südamerika ist:" + SüdAmerika2018 + "kg CO2");
-console.log("Relativ zur Gesamtemission der Welt verursacht Südamerika damit" + SüdAmerikaProzent + "%");
-console.log("Für Südamerika hat sich 2018 im Vergleich zu 2008 die Emission um" + SüdAmerikaVeränderungProzent + "% verändert");
-console.log("2018 im Vergleich zu 2008 sind das" + SüdAmerikaVeränderung + "kg CO2");
+// console.log("Die Emission von Afrika ist: " + Afrika2018 + " kg CO2");
+// console.log("Relativ zur Gesamtemission der Welt verursacht Afrika damit" + AfrikaProzent + "%"); 
+// console.log("Für Afrika hat sich 2018 im Vergleich zu 2008 die Emission um" + AfrikaVeränderungProzent + "% verändert"); 
+// console.log("2018 im Vergleich zu 2008 sind das" + AfrikaVeränderung + "kg CO2");
+// console.log("Die Emission von Asien ist:" + Asien2018 + "kg CO2"); 
+// console.log("Relativ zur Gesamtemission der Welt verursacht Asien damit" + AsienProzent + "%");
+// console.log("Für Asien hat sich 2018 im Vergleich zu 2008 die Emission um" + AsienVeränderungProzent + "% verändert"); 
+// console.log("2018 im Vergleich zu 2008 sind das" + AsienVeränderung + "kg CO2");
+// console.log("Die Emission von Australien ist:" + Australien2018 + "kg CO2"); 
+// console.log("Relativ zur Gesamtemission der Welt verursacht Australien damit" + AustralienProzent + "%"); 
+// console.log("Für Australien hat sich 2018 im Vergleich zu 2008 die Emission um" + AustralienVeränderungProzent + "% verändert"); 
+// console.log("2018 im Vergleich zu 2008 sind das" + AustralienVeränderung + "kg CO2");
+// console.log("Die Emission von Europa ist:" + Europa2018 + "kg CO2"); 
+// console.log("Relativ zur Gesamtemission der Welt verursacht Europa damit" + EuropaProzent + "%");
+// console.log("Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um" +EuropaVeränderungProzent + "% verändert"); 
+// console.log("2018 im Vergleich zu 2008 sind das" + EuropaVeränderung + "kg CO2");
+// console.log("Die Emission von Nordamerika ist:" + NordAmerika2018 + "kg CO2");
+// console.log("Relativ zur Gesamtemission der Welt verursacht Nordamerika damit" + NordAmerikaProzent + "%");
+// console.log("Für Nordamerika hat sich 2018 im Vergleich zu 2008 die Emission um" + NordAmerikaVeränderungProzent + "% verändert");
+// console.log("2018 im Vergleich zu 2008 sind das" + NordAmerikaVeränderung + "kg CO2");
+// console.log("Die Emission von Südamerika ist:" + SüdAmerika2018 + "kg CO2"); 
+// console.log("Relativ zur Gesamtemission der Welt verursacht Südamerika damit" + SüdAmerikaProzent + "%");
+// console.log("Für Südamerika hat sich 2018 im Vergleich zu 2008 die Emission um" + SüdAmerikaVeränderungProzent + "% verändert"); 
+// console.log("2018 im Vergleich zu 2008 sind das" + SüdAmerikaVeränderung + "kg CO2");
 //# sourceMappingURL=Emission.js.map
