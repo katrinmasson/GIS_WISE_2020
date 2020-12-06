@@ -1,0 +1,110 @@
+body {
+    background-image: url('image/schnee.jpg');
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-size: 135%;
+
+}
+
+h1 {
+    color:#FFFFFF;
+    font-family: sans-serif;
+    position: absolute;
+    top: 5px;
+    left: 44%;
+}
+
+.Hintergrund {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    flex-wrap: wrap;
+    top: 80px;
+    left: 35%;
+    height: 670px;
+    width: 470px;
+    
+}
+
+.play {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 35%;
+    top: 5px;
+}
+
+.Pad1 {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient( #d363a8,  #ffffff);
+    border-radius: 10px;
+    margin:2px;
+}
+
+.Pad2 {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient( #943d77,  #ffffff);
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.Pad3 {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient( #702c5a,  #ffffff);
+    border-radius: 10px;
+    margin:2px;
+}
+
+.Pad4 {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient( #4f67c5,  #ffffff);
+    border-radius: 10px;
+    margin:2px;
+}
+
+.Pad5 {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient( #374b97,  #ffffff);
+    border-radius:10px;
+    margin:2px;
+}
+
+.Pad6 {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient( #132570,  #ffffff);
+    border-radius: 10px;
+    margin:2px;
+}
+
+.Pad7 {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient( #39af35,  #ffffff);
+    border-radius: 10px;
+    margin:2px;
+}
+
+.Pad8 {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient( #288a25,  #ffffff);
+    border-radius: 10px;
+    margin:2px;
+}
+
+.Pad9 {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient( #165814,  #ffffff);
+    border-radius: 10px;
+    margin:2px;
+}
