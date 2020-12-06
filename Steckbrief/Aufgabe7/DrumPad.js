@@ -13,11 +13,11 @@ sample[8] = new Audio("Audios/audio9.mp3");
 function playSample(Sound) {
     sample[Sound].play();
 }
-function playLoop(hihat, kick, snare) {
+function playLoop(audio5, audio6, audio9) {
     setInterval(function () {
-        sample[hihat].play();
-        sample[kick].play();
-        sample[snare].play();
+        sample[audio5].play();
+        sample[audio6].play();
+        sample[audio9].play();
     }, 500);
 }
 ;
