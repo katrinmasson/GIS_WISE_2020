@@ -5,7 +5,7 @@ body {
     justify-content: center;
     height: 100%;
     width: 100%;
-    background-size: 135%;
+    background-size: 160%;
 
 }
 
@@ -13,8 +13,8 @@ h1 {
     color:#FFFFFF;
     font-family: sans-serif;
     position: absolute;
-    top: 5px;
-    left: 44%;
+    top: 0px;
+    left: 45%;
 }
 
 .Hintergrund {
@@ -22,11 +22,10 @@ h1 {
     align-items: center;
     position: absolute;
     flex-wrap: wrap;
-    top: 80px;
+    top: 50px;
     left: 35%;
     height: 670px;
     width: 470px;
-    
 }
 
 .play {
@@ -34,7 +33,7 @@ h1 {
     height: 150px;
     position: relative;
     left: 35%;
-    top: 5px;
+    top: 2px;
 }
 
 .Pad1 {
