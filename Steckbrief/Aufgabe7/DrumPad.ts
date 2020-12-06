@@ -1,15 +1,15 @@
 /* Audios */
 
 var sample = [];
-sample[0] = new Audio("Audios/audio1.mp3");
-sample[1] = new Audio("Audios/audio2.mp3");
-sample[2] = new Audio("Audios/audio3.mp3");
-sample[3] = new Audio("Audios/audio4.mp3");
-sample[4] = new Audio("Audios/audio5.mp3");
-sample[5] = new Audio("Audios/audio6.mp3");
-sample[6] = new Audio("Audios/audio7.mp3");
-sample[7] = new Audio("Audios/audio8.mp3");
-sample[8] = new Audio("Audios/audio9.mp3");
+sample[0] = new Audio("./Audios/audio1.mp3");
+sample[1] = new Audio("./Audios/audio2.mp3");
+sample[2] = new Audio("./Audios/audio3.mp3");
+sample[3] = new Audio("./Audios/audio4.mp3");
+sample[4] = new Audio("./Audios/audio5.mp3");
+sample[5] = new Audio("./Audios/audio6.mp3");
+sample[6] = new Audio("./Audios/audio7.mp3");
+sample[7] = new Audio("./Audios/audio8.mp3");
+sample[8] = new Audio("./Audios/audio9.mp3");
 
 /* Audios abspielen lassen (Funktion allgemein und Playbutton) */
 
