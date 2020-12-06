@@ -9,14 +9,6 @@ body {
 
 }
 
-h1 {
-    color:#FFFFFF;
-    font-family: sans-serif;
-    position: absolute;
-    top: 0px;
-    left: 55%;
-}
-
 .Hintergrund {
     display: flex;
     align-items: center;
