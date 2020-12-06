@@ -16,13 +16,13 @@ body {
     flex-wrap: wrap;
     top: 70px;
     left: 35%;
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
 }
 
 .play {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     position: relative;
     left: 35%;
     top: 2px;
