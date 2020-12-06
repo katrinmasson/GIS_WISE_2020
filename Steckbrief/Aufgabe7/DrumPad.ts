@@ -1,6 +1,6 @@
 /* Audios */
 
-var sample = [];
+const sample: HTMLAudioElement[] = [];
 sample[0] = new Audio("./Audios/audio1.mp3");
 sample[1] = new Audio("./Audios/audio2.mp3");
 sample[2] = new Audio("./Audios/audio3.mp3");
