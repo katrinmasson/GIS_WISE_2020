@@ -1,28 +1,28 @@
-//* Audios *//
+/* Audios */
 var sample = [];
-sample[0] = new Audio("./Audios/Audio1.mp3");
-sample[1] = new Audio("./Audios/Audio2.mp3");
-sample[2] = new Audio("./Audios/Audio3.mp3");
-sample[3] = new Audio("./Audios/Audio4.mp3");
-sample[4] = new Audio("./Audios/Audio5.mp3");
-sample[5] = new Audio("./Audios/Audio6.mp3");
-sample[6] = new Audio("./Audios/Audio7.mp3");
-sample[7] = new Audio("./Audios/Audio8.mp3");
-sample[8] = new Audio("./Audios/Audio9.mp3");
-
-//* Audios abspielen lassen (Funktion allgemein und Playbutton) *//
-
-function playSample(Sound) {
-    sample[Sound].play();
+sample[0] = new Audio("/Audios/Audio1.mp3");
+sample[1] = new Audio("/Audios/Audio2.mp3");
+sample[2] = new Audio("/Audios/Audio3.mp3");
+sample[3] = new Audio("/Audios/Audio4.mp3");
+sample[4] = new Audio("/Audios/Audio5.mp3");
+sample[5] = new Audio("/Audios/Audio6.mp3");
+sample[6] = new Audio("/Audios/Audio7.mp3");
+sample[7] = new Audio("/Audios/Audio8.mp3");
+sample[8] = new Audio("/Audios/Audio9.mp3");
+/* Audios abspielen lassen und aufnehmen lassen (Funktion allgemein und Playbutton) */
+// tslint:disable-next-line: typedef
+function playSample(mp3) {
+    sample[mp3].play();
 }
+// tslint:disable-next-line: typedef
 function playLoop(audio5, audio6, audio9) {
+    // tslint:disable-next-line: typedef
     setInterval(function () {
         sample[audio5].play();
         sample[audio6].play();
         sample[audio9].play();
-    }, 500);
+    }, 300);
 }
-;
 /* einzelne Drumpads */
 document.querySelector(".Pad1").addEventListener("click", function () {
     playSample(0);
@@ -51,7 +51,12 @@ document.querySelector(".Pad8").addEventListener("click", function () {
 document.querySelector(".Pad9").addEventListener("click", function () {
     playSample(8);
 });
-document.querySelector(".play").addEventListener('click', function () {
+document.querySelector("play").addEventListener("click", function () {
     playLoop(4, 5, 8);
 });
-//# sourceMappingURL=DrumPad.js.map
+//*Play-Button verschwindet*//
+document.getElementById("play").addEventListener("click", function () {
+    this.classList.add("is-hidden");
+    document.getElementById("pause").classList.remove("is-hidden");
+});
+//# sourceMappingURL=DrumPad2.js.map
