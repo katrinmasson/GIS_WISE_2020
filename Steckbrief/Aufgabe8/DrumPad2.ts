@@ -1,6 +1,6 @@
 //* Audios *//
 
-var sample = [];
+var sample: HTMLAudioElement = [];
 sample[0] = new Audio("./Audios/Audio1.mp3");
 sample[1] = new Audio("./Audios/Audio2.mp3");
 sample[2] = new Audio("./Audios/Audio3.mp3");
@@ -15,8 +15,7 @@ sample[8] = new Audio("./Audios/Audio9.mp3");
 
 function playSample(Sound) {
     sample[Sound].play();
-}
-;
+};
 
 //* einzelne Drumpads *//
 
