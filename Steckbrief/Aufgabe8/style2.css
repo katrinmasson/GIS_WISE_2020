@@ -70,7 +70,7 @@ body {
     right: 200px;
 }
 
-#Pad1 {
+#pad1 {
     width: 150px;
     height: 150px;
     background-image: linear-gradient( #d363a8,  #ffffff);
@@ -78,11 +78,11 @@ body {
     margin:2px;
 }
 
-#Pad1:hover {
+#pad1:hover {
     opacity: 0.9;
 }
 
-#Pad2 {
+#pad2 {
     width: 150px;
     height: 150px;
     background-image: linear-gradient( #943d77,  #ffffff);
@@ -90,11 +90,11 @@ body {
     margin: 2px;
 }
 
-#Pad2:hover {
+#pad2:hover {
     opacity: 0.9;
 }
 
-#Pad3 {
+#pad3 {
     width: 150px;
     height: 150px;
     background-image: linear-gradient( #702c5a,  #ffffff);
@@ -102,11 +102,11 @@ body {
     margin:2px;
 }
 
-#Pad3:hover {
+#pad3:hover {
     opacity: 0.9;
 }
 
-#Pad4 {
+#pad4 {
     width: 150px;
     height: 150px;
     background-image: linear-gradient( #4f67c5,  #ffffff);
@@ -114,11 +114,11 @@ body {
     margin:2px;
 }
 
-#Pad4:hover {
+#pad4:hover {
     opacity: 0.9;
 }
 
-#Pad5 {
+#pad5 {
     width: 150px;
     height: 150px;
     background-image: linear-gradient( #374b97,  #ffffff);
@@ -126,11 +126,11 @@ body {
     margin:2px;
 }
 
-#Pad5:hover {
+#pad5:hover {
     opacity: 0.9;
 }
 
-#Pad6 {
+#pad6 {
     width: 150px;
     height: 150px;
     background-image: linear-gradient( #132570,  #ffffff);
@@ -138,11 +138,11 @@ body {
     margin:2px;
 }
 
-#Pad6:hover {
+#pad6:hover {
     opacity: 0.9;
 }
 
-#Pad7 {
+#pad7 {
     width: 150px;
     height: 150px;
     background-image: linear-gradient( #39af35,  #ffffff);
@@ -150,11 +150,11 @@ body {
     margin:2px;
 }
 
-#Pad7:hover {
+#pad7:hover {
     opacity: 0.9;
 }
 
-#Pad8 {
+#pad8 {
     width: 150px;
     height: 150px;
     background-image: linear-gradient( #288a25,  #ffffff);
@@ -162,11 +162,11 @@ body {
     margin:2px;
 }
 
-#Pad8:hover {
+#pad8:hover {
     opacity: 0.9;
 }
 
-#Pad9 {
+#pad9 {
     width: 150px;
     height: 150px;
     background-image: linear-gradient( #165814,  #ffffff);
@@ -174,6 +174,6 @@ body {
     margin:2px;
 }
 
-#Pad9:hover {
+#pad9:hover {
     opacity: 0.9;
 }

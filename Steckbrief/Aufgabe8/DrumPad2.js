@@ -1,62 +1,55 @@
-/* Audios */
-var sample = [];
-sample[0] = new Audio("/Audios/Audio1.mp3");
-sample[1] = new Audio("/Audios/Audio2.mp3");
-sample[2] = new Audio("/Audios/Audio3.mp3");
-sample[3] = new Audio("/Audios/Audio4.mp3");
-sample[4] = new Audio("/Audios/Audio5.mp3");
-sample[5] = new Audio("/Audios/Audio6.mp3");
-sample[6] = new Audio("/Audios/Audio7.mp3");
-sample[7] = new Audio("/Audios/Audio8.mp3");
-sample[8] = new Audio("/Audios/Audio9.mp3");
-/* Audios abspielen lassen und aufnehmen lassen (Funktion allgemein und Playbutton) */
-// tslint:disable-next-line: typedef
-function playSample(mp3) {
-    sample[mp3].play();
-}
-// tslint:disable-next-line: typedef
-function playLoop(audio5, audio6, audio9) {
-    // tslint:disable-next-line: typedef
-    setInterval(function () {
-        sample[audio5].play();
-        sample[audio6].play();
-        sample[audio9].play();
-    }, 300);
-}
-/* einzelne Drumpads */
-document.querySelector(".Pad1").addEventListener("click", function () {
-    playSample(0);
-});
-document.querySelector(".Pad2").addEventListener("click", function () {
-    playSample(1);
-});
-document.querySelector(".Pad3").addEventListener("click", function () {
-    playSample(2);
-});
-document.querySelector(".Pad4").addEventListener("click", function () {
-    playSample(3);
-});
-document.querySelector(".Pad5").addEventListener("click", function () {
-    playSample(4);
-});
-document.querySelector(".Pad6").addEventListener("click", function () {
-    playSample(5);
-});
-document.querySelector(".Pad7").addEventListener("click", function () {
-    playSample(6);
-});
-document.querySelector(".Pad8").addEventListener("click", function () {
-    playSample(7);
-});
-document.querySelector(".Pad9").addEventListener("click", function () {
-    playSample(8);
-});
-document.querySelector("play").addEventListener("click", function () {
-    playLoop(4, 5, 8);
-});
-//*Play-Button verschwindet*//
-document.getElementById("play").addEventListener("click", function () {
-    this.classList.add("is-hidden");
-    document.getElementById("pause").classList.remove("is-hidden");
+//* Audios *//
+var DrumPad;
+(function (DrumPad) {
+    var pad = [];
+    pad[0] = new Audio("/Audios/Audio1.mp3");
+    pad[1] = new Audio("/Audios/Audio2.mp3");
+    pad[2] = new Audio("/Audios/Audio3.mp3");
+    pad[3] = new Audio("/Audios/Audio4.mp3");
+    pad[4] = new Audio("/Audios/Audio5.mp3");
+    pad[5] = new Audio("/Audios/Audio6.mp3");
+    pad[6] = new Audio("/Audios/Audio7.mp3");
+    pad[7] = new Audio("/Audios/Audio8.mp3");
+    pad[8] = new Audio("/Audios/Audio9.mp3");
+    //*Funktion für die einzelnen Soundelemente*//
+    function playSample(Soundelemente) {
+        pad[Soundelemente].play();
+    }
+    //* einzelne Drumpads *//
+    document.getElementById("pad1").addEventListener("click", function () {
+        playSample(0);
+    });
+    document.getElementById("pad2").addEventListener("click", function () {
+        playSample(1);
+    });
+    document.getElementById("pad3").addEventListener("click", function () {
+        playSample(2);
+    });
+    document.getElementById("pad4").addEventListener("click", function () {
+        playSample(3);
+    });
+    document.getElementById("pad5").addEventListener("click", function () {
+        playSample(4);
+    });
+    document.getElementById("pad6").addEventListener("click", function () {
+        playSample(5);
+    });
+    document.getElementById("pad7").addEventListener("click", function () {
+        playSample(6);
+    });
+    document.getElementById("pad8").addEventListener("click", function () {
+        playSample(7);
+    });
+    document.getElementById("pad9").addEventListener("click", function () {
+        playSample(8);
+    });
+    document.getElementById("play").addEventListener("click", function () {
+        playLoop(4, 5, 8);
+    });
+    //*Play-Button verschwindet*//
+    document.getElementById("play").addEventListener("click", function () {
+        document.getElementById("play").classList.add("is-hidden");
+        document.getElementById("pause").classList.remove("is-hidden");
+    });
 });
 //# sourceMappingURL=DrumPad2.js.map
