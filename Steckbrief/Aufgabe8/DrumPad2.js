@@ -43,9 +43,6 @@ var DrumPad;
     document.getElementById("pad9").addEventListener("click", function () {
         playSample(8);
     });
-    document.getElementById("play").addEventListener("click", function () {
-        playLoop(4, 5, 8);
-    });
     //*Play-Button verschwindet*//
     document.getElementById("play").addEventListener("click", function () {
         document.getElementById("play").classList.add("is-hidden");
