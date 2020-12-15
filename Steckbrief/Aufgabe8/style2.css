@@ -62,6 +62,12 @@ body {
     left: 100px;
 }
 
+#bild {
+    position: absolute;
+    left: 400px;
+    font-size: 150px;
+}
+
 #pause {
     font-size: 70px;
     color: white;
@@ -81,7 +87,7 @@ body {
 }
 
 .inactiv {
-    color: white;
+    display: white;
 }
 
 /*Pads*/
