@@ -35,7 +35,7 @@ body {
     color: white;
     position: absolute;
     top: 20px;
-    right: 200px;
+    right: 180px;
 }
 
 #muell {
@@ -43,7 +43,7 @@ body {
     color: white;
     position: absolute;
     top: 20px;
-    right: 0px;
+    left: 0px;
 }
 
 #micro {
@@ -51,7 +51,7 @@ body {
     color: white;
     position: absolute;
     top: 20px;
-    right: 100px;
+    right: 80px;
 }
 
 #info {
@@ -59,12 +59,12 @@ body {
     color: white;
     position: absolute;
     top: 20px;
-    left: 100px;
+    left: 115px;
 }
 
 #bild {
     position: absolute;
-    left: 400px;
+    left: 300px;
     font-size: 150px;
 }
 
@@ -73,7 +73,7 @@ body {
     color: white;
     position: absolute;
     top: 20px;
-    right: 200px;
+    right: 180px;
 }
 
 /*Aktivität*/
