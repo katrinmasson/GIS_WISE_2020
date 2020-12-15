@@ -1,79 +1,69 @@
 body {
-    background-image: url('image/schnee.jpg');
     align-items: center;
     display: flex;
     justify-content: center;
     height: 100%;
     width: 100%;
+    background-image: url('image/schnee.jpg');
     background-size: 160%;
-
 }
 
 .Hintergrund {
-    display: flex;
-    align-items: center;
-    position: absolute;
+    position: relative;
     flex-wrap: wrap;
-    top: 70px;
-    left: 35%;
+    display: flex;
     height: 500px;
     width: 500px;
+    top: 30px;
 }
 
 /* Buttons*/
-
-.buttons {
-    position: relative;
-    font-size:70px;
-    top: 570px;
-    cursor: pointer;
-    flex-wrap: flex;
-}
 
 #play {
     font-size: 70px;
     color: white;
     position: absolute;
-    top: 20px;
-    right: 180px;
+    top: 550px;
+    left: 0px;
 }
 
 #muell {
     font-size: 60px;
     color: white;
     position: absolute;
-    top: 20px;
-    left: 0px;
+    top: 550px;
+    left: 400px;
 }
 
 #micro {
     font-size: 65px;
     color: white;
     position: absolute;
-    top: 20px;
-    right: 80px;
+    top: 550px;
+    left: 150px;
 }
 
 #info {
     font-size: 60px;
     color: white;
     position: absolute;
-    top: 20px;
-    left: 115px;
+    top: 550px;
+    left: 300px;
 }
 
 #bild {
-    position: absolute;
-    left: 300px;
+    left: 600px;
+    top: 300px;
     font-size: 150px;
+    position: absolute;
 }
 
 #pause {
     font-size: 70px;
     color: white;
     position: absolute;
-    top: 20px;
-    right: 180px;
+    top: 550px;
+    left: 0px;
 }
 
 /*Aktivität*/
