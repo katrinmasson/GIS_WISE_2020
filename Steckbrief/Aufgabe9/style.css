@@ -1,0 +1,89 @@
+body {
+  background-image: url("./pic/lifes.jpg");
+  background-size: 32%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0%;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  background-color: rgb(192, 192, 192);
+}
+
+h1{
+  margin: 0%;
+  margin-bottom: 10px;
+  font-size: 35px;
+  position: relative;
+  left: 90px;
+  color: rgb(255, 255, 255);
+}
+
+h2{
+  margin: 0%;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 17px;
+  left: 200px;
+  color: rgb(255, 255, 255);
+}
+.wrapper {
+  position: relative;
+}
+.myDiv {
+  position: relative;
+  right: 10px;
+  padding: 10px, 10px, 10px, 10px;
+  background: rgb(194, 151, 190);
+  width: 400px;
+  height: 30px;
+  border-radius: 2px;
+  margin-bottom: 2px;
+  opacity: 90%;
+}
+
+.myDiv:hover {
+  background: rgb(168, 168, 168);
+}
+
+.checkboxField{
+  position: absolute;
+}
+
+.myClass{
+  position: absolute;
+  color: black;
+  margin-top: 5px;
+  left: 50px;
+}
+
+#inputs{
+  position: relative;
+  right: 13px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  width: 400px;
+  height: 35px;
+  opacity: 70%;
+}
+
+.fa-trash-alt {
+  position: relative;
+  font-size: 17px;
+  left: 380px;
+  margin-top: 5px;
+  color: black;
+}
+
+.fa-trash-alt {
+ cursor: pointer;
+}
+
+#clearAll {
+  color: white;
+  position: absolute;
+  top: 500px;
+  font-size: 15px;
+}
