@@ -43,6 +43,18 @@ main {
     color: black;
 }
 
+#record {
+    position: relative;
+    right: 220px;
+    bottom: 120px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    color: black;
+    cursor: pointer;
+}
+
 #todos {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.42);
 }
