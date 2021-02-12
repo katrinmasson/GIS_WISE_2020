@@ -9,7 +9,7 @@ window.addEventListener("load", function(): void {
     setTimeout(
         function (): void {
             artyom.initialize({
-            lang: "de-De",
+            language: "de-De",
             continuous: true,
             listen: true,
             interimResults: true,

@@ -1,0 +1,182 @@
+body {
+    background-image: url(pics/bg.png);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    border: 2px;
+    float: right;
+}
+header {
+    background: rgb(127, 223, 103);
+    border-radius: 0px 0px 10px 10px;
+}
+
+header ::after {
+    display: table;
+    clear: both;
+}
+
+nav ul {
+    margin: 10px 20px;
+    padding: 0;
+    list-style: none; 
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 20px;
+    padding-top: 40px;
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.now {
+    color: rgb(208, 211, 44);
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: rgb(221, 196, 200);
+}
+
+
+h1 {
+    font-size: 35px;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: overline;
+    text-decoration-color: white;
+}
+
+h2 {
+    margin-right: 700px;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+h3 {
+    margin-left: 35px;
+    font-family: sans-serif;
+    color: rgb(165, 162, 162);
+}
+
+h4 {
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: overline;
+    text-decoration-color: white;
+}
+
+h5 {
+    text-align: left;
+    left: 10px;
+    color: rgb(16, 88, 16);
+}
+
+#pic {
+    width: 200px;
+}
+
+form {
+    border-radius: 7px;
+    padding: 20px;
+    margin-left: -30px;
+}
+
+.div1 {
+    background-color: rgb(16, 146, 48);
+    border-radius: 50%;
+    height: 900px;
+    width: 1100px;
+    margin-top: -900px;
+    margin-left: 50px;
+}
+
+i {
+    text-align: left;
+}
+
+.angebot {
+    text-align: center;
+    position: relative;
+    top: 120px;
+    right: 70px;
+}
+
+.restaurant {
+    display: inline-block;
+    width: 330px;
+    height: 330px;
+    border-color: rgb(105, 228, 105);
+    border-style: groove;
+    border-radius: 2%;
+    position: relative;
+    left: 80px;
+    top: -100px;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    background-image: url("pics/Restaurant.png");
+    background-size: 100%;
+}
+
+.zimmer {
+    display: inline-block;
+    width: 330px;
+    height: 330px;
+    border-color: rgb(105, 228, 105);
+    border-style: groove;
+    border-radius: 3%;
+    position: relative;
+    left: 80px;
+    top: -100px;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    background-image: url("pics/Zimmer.png");
+    background-size: 100%;
+}
+
+.freizeit {
+    display: inline-block;
+    width: 330px;
+    height: 330px;
+    border-color: rgb(105, 228, 105);
+    border-style: groove;
+    border-radius: 3%;
+    position: relative;
+    left: 80px;
+    top: -100px;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    background-image: url("pics/Freizeit.png");
+    background-size: 100%;
+}
+
+footer {
+    position: relative;
+    top: 200px;
+}

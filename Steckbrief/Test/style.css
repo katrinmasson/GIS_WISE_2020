@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#inputName {
+    font-size: 30px;
+    color: black;
+}
+
+#inputFieldEmail {
+    font-size: 30px;
+    color: black;
+}
+
+#inputFieldPhone {
+    font-size: 30px;
+    color: black;
+}
+
+#outputList {
+    font-size: 30px;
+    color: black;
+}
